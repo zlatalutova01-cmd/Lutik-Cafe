@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню Лютика</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <img src="img/logo.png" alt="Lutik" class="logo">
+        <a href="#breakfast" class="btn">Завтраки</a>
+        <a href="#desserts" class="btn">Десерты</a>
+        <a href="#lunch" class="btn">Обед</a>
+        <a href="#salads" class="btn">Салаты</a>
+        <a href="#dinner" class="btn">Ужин</a>
+        <a href="#coffee" class="btn">Кофе</a>
+        <a href="#about" class="btn">О нас</a>
+        <a href="#contacts" class="btn">Контакты</a>
+        <p></p>
+        <p>🌶️ - Не много острые</p>
+        <p>🌶️🌶️- Сожги свой рот</p>
+    </div>
+</header>
+
+<section id="breakfast" class="section">
+    <div class="container">
+
+        <h2>Завтраки</h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-card" onclick="openModal('Омлет классический','Яйца, молоко, зелень','img/breakfast1.jpg','250 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Омлет классический', 250, 'img/breakfast1.jpg')">
+                        ❤️
+                    </div>
+                <img src="img/breakfast1.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Омлет классический</h3>
+                    <p>Яйца, молоко, зелень</p>
+                    <div class="price">250 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Сырники','Творог, ягоды, сметана','img/breakfast2.jpg','320 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Сырники', 320, 'img/breakfast2.jpg')">
+                    ❤️
+                </div>
+                <img src="img/breakfast2.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Сырники</h3>
+                    <p>Творог, ягоды, сметана</p>
+                    <div class="price">320 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Бутерброды','Хлеб, сыр, огурцы','img/breakfast3.jpg','200 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Бутерброды', 200, 'img/breakfast3.jpg')">
+                    ❤️
+                </div>
+                <img src="img/breakfast3.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Бутерброды</h3>
+                    <p>Хлеб, сыр, огурцы</p>
+                    <div class="price">200 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Фруктовый салат','Свежие фрукты, йогурт','img/breakfast4.jpg','280 ₽','Италия')">
+                <div class="like-btn"  onclick="toggleLike(event, 'Фруктовый салат', 280, 'img/breakfast4.jpg')">
+                    ❤️
+                </div>
+                <img src="img/breakfast4.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Фруктовый салат</h3>
+                    <p>Свежие фрукты, йогурт</p>
+                    <div class="price">280 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Каша','Овсяная, молоко, мед','img/breakfast5.jpg','220 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Каша', 220, 'img/breakfast5.jpg')">
+                    ❤️
+                </div>
+                <img src="img/breakfast5.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Каша</h3>
+                    <p>Овсяная, молоко, мед</p>
+                    <div class="price">220 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Панкейки','Мука, яйца, сироп','img/breakfast6.jpg','350 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Панкейки', 350, 'img/breakfast6.jpg')">
+                    ❤️
+                </div>
+                <img src="img/breakfast6.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Панкейки</h3>
+                    <p>Мука, яйца, сироп</p>
+                    <div class="price">350 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Тосты','Хлеб, масло, фрукты','img/breakfast7.jpg','200 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Тосты', 200, 'img/breakfast7.jpg')">
+                    ❤️
+                </div>
+                <img src="img/breakfast7.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Тосты</h3>
+                    <p>Хлеб, масло, фрукты</p>
+                    <div class="price">200 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Смузи','Фрукты, йогурт, молоко','img/breakfast8.jpg','250 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Смузи', 250, 'img/breakfast8.jpg')">
+                    ❤️
+                </div>
+                <img src="img/breakfast8.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Смузи</h3>
+                    <p>Фрукты, йогурт, молоко</p>
+                    <div class="price">250 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Классический бутерброд','Хлеб, ветчина, сыр, огурцы','img/breakfast9.jpg','250 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Классический бутерброд', 250, 'img/breakfast9.jpg')">
+                    ❤️
+                </div>
+                <img src="img/breakfast9.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Классический бутерброд</h3>
+                    <p>Хлеб, ветчина, сыр, огурцы</p>
+                    <div class="price">250 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Бутерброд с авокадо','Хлеб, авокадо, яйцо, зелень','img/breakfast10.jpg','300 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Бутерброд с авокадо', 300, 'img/breakfast10.jpg')">
+                    ❤️
+                </div>
+                <img src="img/breakfast10.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Бутерброд с авокадо</h3>
+                    <p>Хлеб, авокадо, яйцо, зелень</p>
+                    <div class="price">300 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Бутерброд с тунцом','Хлеб, тунец, майонез, огурцы','img/breakfast11.jpg','280 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Бутерброд с тунцом', 280, 'img/breakfast11.jpg')">
+                    ❤️
+                </div>
+                <img src="img/breakfast11.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Бутерброд с тунцом</h3>
+                    <p>Хлеб, тунец, майонез, огурцы</p>
+                    <div class="price">280 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Бутерброд с лососем','Хлеб, лосось, сливочный сыр, зелень','img/breakfast12.jpg','350 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Бутерброд с лососем', 350, 'img/breakfast12.jpg')">
+                    ❤️
+                </div>
+                <img src="img/breakfast12.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Бутерброд с лососем</h3>
+                    <p>Хлеб, лосось, сливочный сыр, зелень</p>
+                    <div class="price">350 ₽</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="desserts" class="section">
+    <div class="container">
+
+        <h2>Десерты</h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-card" onclick="openModal('Чизкейк','Нежный сливочный десерт','img/dessert1.jpg','350 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Чизкейк', 350, 'img/dessert1.jpg')">
+                    ❤️
+                </div>
+                <img src="img/dessert1.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Чизкейк</h3>
+                    <p>Нежный сливочный десерт</p>
+                    <div class="price">350 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Тирамису','Кофейный итальянский десерт','img/dessert2.jpg','390 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Тирамису', 390, 'img/dessert2.jpg')">
+                    ❤️
+                </div>
+                <img src="img/dessert2.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Тирамису</h3>
+                    <p>Кофейный итальянский десерт</p>
+                    <div class="price">390 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Макаронс','Французские пирожные','img/dessert3.jpg','290 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Макаронс', 290, 'img/dessert3.jpg')">
+                    ❤️
+                </div>
+                <img src="img/dessert3.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Макаронс</h3>
+                    <p>Французские пирожные</p>
+                    <div class="price">290 ₽</div>
+                </div>
+            </div>
+                <div class="menu-card" onclick="openModal('Пирожное Наполеон','Слоеное тесто, крем','img/dessert4.jpg','320 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Пирожное Наполеон', 320, 'img/dessert4.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/dessert4.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Пирожное "Наполеон"</h3>
+                        <p>Слоеное тесто, крем</p>
+                        <div class="price">320 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Мороженое','Разные вкусы, свежие ингредиенты','img/dessert5.jpg','250 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Мороженое', 250, 'img/dessert5.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/dessert5.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Мороженое</h3>
+                        <p>Разные вкусы, свежие ингредиенты</p>
+                        <div class="price">250 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Пирожное Эклер','Заварное тесто, крем','img/dessert6.jpg','300 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Пирожное Эклер', 300, 'img/dessert6.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/dessert6.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Пирожное "Эклер"</h3>
+                        <p>Заварное тесто, крем</p>
+                        <div class="price">300 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Пирожное Картошка','Печенье, сгущенка, какао','img/dessert7.jpg','280 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Пирожное Картошка', 280, 'img/dessert7.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/dessert7.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Пирожное "Картошка"</h3>
+                        <p>Печенье, сгущенка, какао</p>
+                        <div class="price">280 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Пирожное Птичье молоко','Заварной крем, шоколад','img/dessert8.jpg','320 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Пирожное Птичье молоко', 320, 'img/dessert8.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/dessert8.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Пирожное "Птичье молоко"</h3>
+                        <p>Заварной крем, шоколад</p>
+                        <div class="price">320 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Пирожное Медовик','Медовые коржи, крем','img/dessert9.jpg','350 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Пирожное Медовик', 350, 'img/dessert9.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/dessert9.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Пирожное "Медовик"</h3>
+                        <p>Медовые коржи, крем</p>
+                        <div class="price">350 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="lunch" class="section">
+    <div class="container">
+
+        <h2>Обеды</h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-card" onclick="openModal('Салат Цезарь','Курица, салат, пармезан, соус','img/lunch1.jpg','400 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Салат Цезарь', 400, 'img/lunch1.jpg')">
+                        ❤️
+                    </div>
+                <img src="img/lunch1.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Салат Цезарь</h3>
+                    <p>Курица, салат, пармезан, соус</p>
+                    <div class="price">400 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Суп-пюре','Овощной суп с пюре','img/lunch2.jpg','350 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Суп-пюре', 350, 'img/lunch2.jpg')">
+                    ❤️
+                </div>
+                <img src="img/lunch2.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Суп-пюре</h3>
+                    <p>Овощной суп с пюре</p>
+                    <div class="price">350 ₽</div>
+                </div>
+            </div>
+            <div class="menu-card" onclick="openModal('Паста Болоньезе','Паста с мясным соусом','img/lunch3.jpg','450 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Паста Болоньезе', 450, 'img/lunch3.jpg')">
+                    ❤️
+                </div>
+                <img src="img/lunch3.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Паста Болоньезе</h3>
+                    <p>Паста с мясным соусом</p>
+                    <div class="price">450 ₽</div>
+                </div>
+            </div>
+                <div class="menu-card" onclick="openModal('Ризотто с грибами','Рис, грибы, пармезан','img/lunch4.jpg','420 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Ризотто с грибами', 420, 'img/lunch4.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/lunch4.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Ризотто с грибами</h3>
+                        <p>Рис, грибы, пармезан</p>
+                        <div class="price">420 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Греческий салат','Огурцы, помидоры, фета, оливки','img/lunch5.jpg','380 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Греческий салат', 380, 'img/lunch5.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/lunch5.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Греческий салат</h3>
+                        <p>Огурцы, помидоры, фета, оливки</p>
+                        <div class="price">380 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Куриные крылышки','Крылышки, соус, специи','img/lunch6.jpg','450 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Куриные крылышки', 450, 'img/lunch6.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/lunch6.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Куриные крылышки</h3>
+                        <p>Крылышки, соус, специи</p>
+                        <div class="price">450 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Роллы','Рис, рыба, нори','img/lunch7.jpg','500 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Роллы', 500, 'img/lunch7.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/lunch7.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Роллы</h3>
+                        <p>Рис, рыба, нори</p>
+                        <div class="price">500 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Бургер','Булочка, котлета, сыр, овощи','img/lunch8.jpg','450 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Бургер', 450, 'img/lunch8.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/lunch8.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Бургер</h3>
+                        <p>Булочка, котлета, сыр, овощи</p>
+                        <div class="price">450 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Стейк','Говядина, специи, гарнир','img/lunch9.jpg','600 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Стейк', 600, 'img/lunch9.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/lunch9.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Стейк</h3>
+                        <p>Говядина, специи, гарнир</p>
+                        <div class="price">600 ₽</div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+</section>
+
+<section id="salads" class="section">
+    <div class="container">
+
+        <h2>Салаты</h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-card" onclick="openModal('Салат Цезарь','Курица, салат, пармезан, соус','img/salad1.jpg','400 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Салат Цезарь', 400, 'img/salad1.jpg')">
+                    ❤️
+                </div>
+                <img src="img/salad1.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Салат Цезарь</h3>
+                    <p>Курица, салат, пармезан, соус</p>
+                    <div class="price">400 ₽</div>
+                </div>
+            </div>
+            <div class="menu-card" onclick="openModal('Греческий салат','Огурцы, помидоры, фета, оливки','img/salad2.jpg','380 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Греческий салат', 380, 'img/salad2.jpg')">
+                    ❤️
+                </div>
+                <img src="img/salad2.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Греческий салат</h3>
+                    <p>Огурцы, помидоры, фета, оливки</p>
+                    <div class="price">380 ₽</div>
+                </div>
+            </div>
+                <div class="menu-card" onclick="openModal('Салат с тунцом','Тунец, салат, овощи, соус','img/salad3.jpg','420 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Салат с тунцом', 420, 'img/salad3.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/salad3.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Салат с тунцом</h3>
+                        <p>Тунец, салат, овощи, соус</p>
+                        <div class="price">420 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Салат с авокадо','Авокадо, салат, овощи, соус','img/salad4.jpg','400 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Салат с авокадо', 400, 'img/salad4.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/salad4.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Салат с авокадо</h3>
+                        <p>Авокадо, салат, овощи, соус</p>
+                        <div class="price">400 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Салат с креветками','Креветки, салат, овощи, соус','img/salad5.jpg','450 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Салат с креветками', 450, 'img/salad5.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/salad5.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Салат с креветками</h3>
+                        <p>Креветки, салат, овощи, соус</p>
+                        <div class="price">450 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Салат с курицей','Курица, салат, овощи, соус','img/salad6.jpg','400 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Салат с курицей', 400, 'img/salad6.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/salad6.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Салат с курицей</h3>
+                        <p>Курица, салат, овощи, соус</p>
+                        <div class="price">400 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Салат с лососем','Лосось, салат, овощи, соус','img/salad7.jpg','450 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Салат с лососем', 450, 'img/salad7.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/salad7.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Салат с лососем</h3>
+                        <p>Лосось, салат, овощи, соус</p>
+                        <div class="price">450 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Салат с сыром фета','Сыр фета, салат, овощи, соус','img/salad8.jpg','380 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Салат с сыром фета', 380, 'img/salad8.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/salad8.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Салат с сыром фета</h3>
+                        <p>Сыр фета, салат, овощи, соус</p>
+                        <div class="price">380 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Салат с моцареллой','Моцарелла, салат, овощи, соус','img/salad9.jpg','400 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Салат с моцареллой', 400, 'img/salad9.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/salad9.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Салат с моцареллой</h3>
+                        <p>Моцарелла, салат, овощи, соус</p>
+                        <div class="price">400 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="dinner" class="section">
+    <div class="container">
+
+        <h2>Ужин</h2>
+
+        <div class="menu-grid">
+            <div class="menu-card" onclick="openModal('Стейк','Говядина, специи, гарнир','img/dinner1.jpg','600 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Стейк', 600, 'img/dinner1.jpg')">
+                    ❤️
+                </div>
+                <img src="img/dinner1.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Стейк</h3>
+                    <p>Говядина, специи, гарнир</p>
+                    <div class="price">600 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Паста Болоньезе','Паста с мясным соусом','img/dinner2.jpg','450 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Паста Болоньезе', 450, 'img/dinner2.jpg')">
+                    ❤️
+                </div>
+                <img src="img/dinner2.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Паста Болоньезе</h3>
+                    <p>Паста с мясным соусом</p>
+                    <div class="price">450 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Ризотто с грибами','Рис, грибы, пармезан','img/dinner3.jpg','420 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Ризотто с грибами', 420, 'img/dinner3.jpg')">
+                    ❤️
+                </div>
+                <img src="img/dinner3.jpg" alt="">
+                <div class="menu-info">
+                    <h3>Ризотто с грибами</h3>
+                    <p>Рис, грибы, пармезан</p>
+                    <div class="price">420 ₽</div>
+                </div>
+            </div>
+                <div class="menu-card" onclick="openModal('Куриные крылышки','Крылышки, соус, специи','img/dinner4.jpg','450 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Куриные крылышки', 450, 'img/dinner4.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/dinner4.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Куриные крылышки</h3>
+                        <p>Крылышки, соус, специи</p>
+                        <div class="price">450 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Роллы','Рис, рыба, нори','img/dinner5.jpg','500 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Роллы', 500, 'img/dinner5.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/dinner5.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Роллы</h3>
+                        <p>Рис, рыба, нори</p>
+                        <div class="price">500 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Бургер','Булочка, котлета, сыр, овощи','img/dinner6.jpg','450 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Бургер', 450, 'img/dinner6.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/dinner6.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Бургер</h3>
+                        <p>Булочка, котлета, сыр, овощи</p>
+                        <div class="price">450 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Пицца','Тесто, томатный соус, сыр, начинка','img/dinner7.jpg','550 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Пицца', 550, 'img/dinner7.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/dinner7.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Пицца</h3>
+                        <p>Тесто, томатный соус, сыр, начинка</p>
+                        <div class="price">550 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Лазанья','Паста, мясной соус, сыр','img/dinner8.jpg','500 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Лазанья', 500, 'img/dinner8.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/dinner8.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Лазанья</h3>
+                        <p>Паста, мясной соус, сыр</p>
+                        <div class="price">500 ₽</div>
+                    </div>
+                </div>
+                <div class="menu-card" onclick="openModal('Гриль-ассорти','Мясо и овощи на гриле','img/dinner9.jpg','600 ₽','Италия')">
+                    <div class="like-btn" onclick="toggleLike(event, 'Гриль-ассорти', 600, 'img/dinner9.jpg')">
+                        ❤️
+                    </div>
+                    <img src="img/dinner9.jpg" alt="">
+                    <div class="menu-info">
+                        <h3>Гриль-ассорти</h3>
+                        <p>Мясо и овощи на гриле</p>
+                        <div class="price">600 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="coffee" class="section">
+    <div class="container">
+
+        <h2>Кофе</h2>
+        <div class="menu-grid">
+            <div class="menu-card" onclick="openModal('Эспрессо','Крепкий черный кофе','img/coffee1.jpg','150 ₽','Италия')">
+            <div class="like-btn" onclick="toggleLike(event,'Эспрессо', 150,'img/coffee1.jpg')">
+                ❤️
+            </div>
+            <img src="img/coffee1.jpg">
+            <div class="menu-info">
+                <h3>Эспрессо</h3>
+                <p>Крепкий черный кофе</p>
+                <div class="price">150 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Капучино','Кофе с молоком и пеной','img/coffee2.jpg','200 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Капучино', 200, 'img/coffe2.jpg')">
+                    ❤️
+                </div>
+                <img src="img/coffee2.jpg">
+                <div class="menu-info">
+                    <h3>Капучино</h3>
+                    <p>Кофе с молоком и пеной</p>
+                    <div class="price">200 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Латте','Кофе с большим количеством молока','img/coffee3.jpg','220 ₽','Франция')">
+                <div class="like-btn" onclick="toggleLike(event, 'Латте', 220, 'img/coffee3.jpg')">
+                    ❤️
+                </div>
+                <img src="img/coffee3.jpg">
+                <div class="menu-info">
+                    <h3>Латте</h3>
+                    <p>Кофе с большим количеством молока</p>
+                    <div class="price">220 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Американо','Кофе с добавлением горячей воды','img/coffee4.jpg','180 ₽','Америка')">
+                <div class="like-btn" onclick="toggleLike(event, 'Американо', 180, 'img/coffee4.jpg')">
+                    ❤️
+                </div>
+                <img src="img/coffee4.jpg">
+                <div class="menu-info">
+                    <h3>Американо</h3>
+                    <p>Кофе с добавлением горячей воды</p>
+                    <div class="price">180 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Мокко','Кофе с шоколадом и молоком','img/coffee5.jpg','250 ₽','Италия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Мокко', 250, 'img/coffee5.jpg')">
+                    ❤️
+                </div>
+                <img src="img/coffee5.jpg">
+                <div class="menu-info">
+                    <h3>Мокко</h3>
+                    <p>Кофе с шоколадом и молоком</p>
+                    <div class="price">250 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Раф','Кофе с ванилью и сливками','img/coffee6.jpg','270 ₽','Россия')">
+                <div class="like-btn" onclick="toggleLike(event, 'Раф', 270, 'img/coffee6.jpg')">
+                    ❤️
+                </div>
+                <img src="img/coffee6.jpg">
+                <div class="menu-info">
+                    <h3>Раф</h3>
+                    <p>Кофе с ванилью и сливками</p>
+                    <div class="price">270 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Глясе','Кофе с мороженым и сиропом','img/coffee7.jpg','300 ₽','Франция')">
+                <div class="like-btn" onclick="toggleLike(event, 'Глясе', 300, 'img/coffee7.jpg')">
+                    ❤️
+                </div>
+                <img src="img/coffee7.jpg">
+                <div class="menu-info">
+                    <h3>Глясе</h3>
+                    <p>Кофе с мороженым и сиропом</p>
+                    <div class="price">300 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Фраппе','Холодный кофе с льдом','img/coffee8.jpg','280 ₽','Греция')">
+                <div class="like-btn" onclick="toggleLike(event, 'Фраппе', 280, 'img/coffee8.jpg')">
+                    ❤️
+                </div>
+                <img src="img/coffee8.jpg">
+                <div class="menu-info">
+                    <h3>Фраппе</h3>
+                    <p>Холодный кофе с льдом</p>
+                    <div class="price">280 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-card" onclick="openModal('Карамельный латте','Латте с карамельным сиропом','img/coffee9.jpg','250 ₽','Франция')">
+                <div class="like-btn" onclick="toggleLike(event, 'Карамельный латте', 250, 'img/coffee9.jpg')">
+                    ❤️
+                </div>
+                <img src="img/coffee9.jpg">
+                <div class="menu-info">
+                    <h3>Карамельный латте</h3>
+                    <p>Латте с карамельным сиропом</p>
+                    <div class="price">250 ₽</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="about" class="section dark">
+    <h2>О нас</h2>
+
+    <p>Мы - команда энтузиастов, которые любят готовить и делиться своей страстью к еде. Наше кафе - это место, где вы можете насладиться вкусными блюдами, приготовленными с любовью и вниманием к деталям.</p>
+    <p>Мы используем только свежие ингредиенты и стараемся создавать уникальные вкусы, чтобы каждый визит в наше кафе был незабываемым.</p>
+</section>
+
+<section id="contacts" class="section">
+    <h2>Контакты</h2>
+    <p></p>
+
+    <div class="socials">
+        <a class="social-btn" href="https://t.me/LutovAleksander" target="_blank">Телеграм</a>
+        <a class="social-btn" href="https://vk.com/lyutov07" target="_blank">VK</a>
+        <a class="social-btn" href="https://www.instagram.com/lutov.s7?igsh=d285eXl4Mzk4OWd0&utm_source=qr" target="_blank">Instagram</a>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <p>© 2026 Все права защищены</p>
+</footer>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">×</span>
+
+        <img id="modal-img" src="" alt="">
+
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+        <p id="modal-country"></p>
+        <div class="price" id="modal-price"></div>
+
+    </div>
+</div>
+
+<div class="floating-cart" id="fav-btn">
+    ❤️ <span id="cart-count">0</span>
+</div>
+
+<div class="fav-panel" id="fav-panel"></div>
+
+<!-- отдельное увеличение картинки -->
+<div id="imageZoom" class="image-zoom" onclick="closeZoom()">
+    <img id="zoomedImg">
+</div>
+
+<button id="toTopBtn" onclick="scrollToTop()">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
