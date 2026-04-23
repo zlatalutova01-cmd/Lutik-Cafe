@@ -452,3 +452,37 @@ section {
         padding: 8px 12px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 10px;
+    }
+
+    .menu-card img {
+        height: 120px;
+    }
+
+    .menu-info {
+        padding: 10px;
+    }
+
+    .menu-info h3 {
+        font-size: 12px;
+    }
+
+    .menu-info p {
+        font-size: 10px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+
+    .like-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
